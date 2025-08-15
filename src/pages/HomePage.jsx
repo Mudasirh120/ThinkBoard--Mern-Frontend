@@ -1,11 +1,10 @@
 import Navbar from "../components/Navbar.jsx";
 import { useState, useEffect } from "react";
 import RateLimitUI from "../components/RateLimitUI";
-import Axios from "axios";
 import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard.jsx";
 import NoteNotFound from "../components/NoteNotFound.jsx";
-import axios from "axios";
+import axios from "../lib/axios.js";
 function HomePage() {
   const [isRateLimit, setisRateLimit] = useState(false);
   const [Notes, setNotes] = useState([]);
