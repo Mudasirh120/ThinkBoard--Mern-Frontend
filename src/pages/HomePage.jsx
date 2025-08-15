@@ -5,6 +5,7 @@ import Axios from "axios";
 import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard.jsx";
 import NoteNotFound from "../components/NoteNotFound.jsx";
+import axios from "axios";
 function HomePage() {
   const [isRateLimit, setisRateLimit] = useState(false);
   const [Notes, setNotes] = useState([]);
@@ -12,7 +13,7 @@ function HomePage() {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        await Axios.get("http://127.0.0.1:5001/api/notes").then((res) => {
+        await axios.get("/api/notes").then((res) => {
           setNotes(res.data);
           setisRateLimit(false);
         });
