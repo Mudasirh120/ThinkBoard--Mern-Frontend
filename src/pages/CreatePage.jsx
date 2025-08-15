@@ -15,7 +15,7 @@ function CreatePage() {
     }
     setLoading(true);
     try {
-      await api.post("/notes", { title, content });
+      await api.post("/api/notes", { title, content });
       toast.success("Note Created Successfully.");
       Navigate("/");
     } catch (error) {
