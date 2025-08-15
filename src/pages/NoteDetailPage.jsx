@@ -52,7 +52,7 @@ const NoteDetailPage = () => {
     setSaving(true);
 
     try {
-      await api.put(`/api/notes/${id}`, { note });
+      await api.put(`/api/notes/${id}`, note);
       toast.success("Note updated successfully");
       navigate("/");
     } catch (error) {
