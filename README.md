@@ -1,12 +1,76 @@
-# React + Vite
+# ThinkBoard 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **MERN-based CRUD notes app** with a clean Daisy & Tailwind UI, success or error messages via toast notifications, and Redis-powered rate limiting.
 
-Currently, two official plugins are available:
+Users can create, edit, and delete notes easily with a clean and responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✨ Create, update, and delete notes
+- 🎨 Modern UI built with **React + TailwindCSS + DaisyUI**
+- 🔥 Toast notifications
+- 🛡️ **Rate limiting** using Upstash Redis
+- 🗄️ MongoDB + Mongoose for database
+- ⚡ Fast backend powered by Express
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+- React
+- TailwindCSS + DaisyUI
+- React Router
+- React Hot Toast
+- Axios
+
+**Backend**
+
+- Node.js + Express
+- MongoDB + Mongoose
+- Upstash Redis (Rate limiting)
+- CORS + Dotenv
+
+---
+
+**Note that [ThinkBoard](https://github.com/Mudasirh120/ThinkBoard--Mern-Backend) backend is also needed along with this.**
+
+## 📦 Installation
+
+### 1. Clone the repositories
+
+```bash
+git clone https://github.com/Mudasirh120/Forver--MERN-Frontend.git
+cd Forver--MERN-Frontend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Add environment variables in .env file
+
+```bash
+VITE_API_BASE_URL="thinkboard_backend_url"
+```
+
+### 4. Run the Project
+
+```bash
+npm run dev
+```
+
+---
+
+### Screenshots
+
+![home](./readmeImages/home.png)
+![create](./readmeImages/create.png)
+![updateHome](./readmeImages/updatedHome.png)
+![edit](./readmeImages/edit.png)
+![delete](./readmeImages/delete.png)
