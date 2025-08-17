@@ -36,7 +36,7 @@ Users can create, edit, and delete notes easily with a clean and responsive inte
 
 ---
 
-**Note that [ThinkBoard](https://github.com/Mudasirh120/ThinkBoard--Mern-Backend) backend is also needed along with this.**
+**Note that [ThinkBoard Backend](https://github.com/Mudasirh120/ThinkBoard--Mern-Backend) is also needed along with this.**
 
 ## 📦 Installation
 
